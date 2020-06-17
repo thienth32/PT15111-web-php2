@@ -32,7 +32,11 @@ class ProductController extends BaseController
       header("location: " . BASE_URL);
     }
 
-    include_once './app/views/products/edit-form.php';
+    return $this->render('products.edit-form',
+                            [
+                              'model' => $model,
+                              'cates' => $cates
+                            ]);
   }
   public function saveAdd(){
 
