@@ -2,7 +2,7 @@
 @section('content')
 <table class="table table-stripped">
   <thead>
-    <th>Mã SP</th>
+    <th>Mã sp</th>
     <th>Tên sp</th>
     <th>Danh mục</th>
     <th>Giá tiền</th>
@@ -20,7 +20,6 @@
         <td>
             <a href="{{getClientUrl('edit-product',
                         ['id' => $item->id])}}">Sửa</a>
-
             <a href="{{getClientUrl('remove-product',
                         ['id' => $item->id])}}">Xóa</a>
           </td>
