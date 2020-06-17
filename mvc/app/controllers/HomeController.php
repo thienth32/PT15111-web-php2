@@ -8,10 +8,10 @@ class HomeController extends BaseController
   {
     $products = Product::all();
 
-    // return $this->render('home.trang-chu', [
-    //                         'products' => $products
-    //                       ]);
-    return $this->render('layouts.main');
+    return $this->render('home.trang-chu', [
+                            'products' => $products
+                          ]);
+    
   }
 }
 
